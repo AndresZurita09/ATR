@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M01 |12-6 REV.1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>inspección de subestación eléctrica</h1>
+        <header>
+            <div class="register">
+                <label for="nTeam">Número de equipo:</label>
+                <input type="text" name="nTeam" id="nTeam">
+            </div>
+            <div class="register">
+                <label for="nWeek">Semana:</label>
+                <input type="text" name="nWeek" id="nWeek">
+            </div>
+            <div class="register">
+                <label for="nYear">Año:</label>
+                <input type="text" name="nYear" id="nYear">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M9 12l2 2l4 -4" />
+              </svg>
+        </header>
+        <main>
+            <form action="">
+                <div class="row">
+                    <div class="col-25">
+                        <Label for="Q1">1. Revise que la malla de protección este libre de objetos extraños (Ej. Libre de hiervas, piedras u objetos que no pertenezcan a el).</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q1" id="Q1">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                <path d="M9 12l2 2l4 -4" />
+                              </svg> Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>2. Revise la temperatura del aceite. Debe ser la indicada por el proveedor.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>3. Asegúrese que el transformador no emita ruidos extraños.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>4. Verifique que no existan arqueos en las zapatas de conexiones de las cuchillas
+                            fusibles.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>5. Verifique si hay fugas de aceite.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>6. Fosa de contención limpia y seca.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>7. Verifique que el área este libre de basura u objetos extraños.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="select">
+                            <option value="">Seleccione una opción</option>
+                            <option value="COM">Completo</option>
+                            <option value="REM">Remplazo de parte</option>
+                            <option value="CONREP">Confirmación de Reparación</option>
+                            <option value="A"><span>A</span> Ajuste</option>
+                            <option value="C"><span>C</span> Limpieza</option>
+                            <option value="L"><span>L</span> Lubricación</option>
+                            <option value="R"><span>R</span> Reparación</option>
+                            <option value="T"><span>T</span> Reapretado</option>
+                            <option value="N/A"><span>N/A</span> No aplica</option>
+                            <option value="NT"><span>NT</span> No trabajó</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="observations">Observaciones</label>
+                    </div>
+                    <div class="col-80">
+                        <textarea name="observations" id="observations"></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button"> Enviar </button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h2>M01 |12-6 REV.1</h2>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <label for="nTeam">Número de equipo</label>
+            <input type="text" name="nTeam" id="nTeam"> 
+            <label for="nTeam">Semana</label>
+            <input type="text" name="nWeek" id="nTeam"> 
+            <label for="nTeam">Año</label>
+            <input type="text" name="nYear" id="nTeam"> 
+    </main>
+</body>
+</html> -->
