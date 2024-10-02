@@ -1,7 +1,7 @@
 :root {
     --color-principal: #eeeeee;
     -color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #7fc8fd;
 }
 
 html {
@@ -95,6 +95,9 @@ textarea {
     border-radius: 10px;
 }
 
+.row{
+    margin-top: 1rem;
+}
 .col-25, .col-75 {
     float: left;
     width: 50%;
@@ -103,23 +106,6 @@ textarea {
 
 select {
     text-transform: uppercase;
-}
-
-.observations {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    max-width: 100rem;
-    margin: auto;
-}
-
-.oTec,
-.oSup {
-    width: 50%;
-}
-
-.oSup .col-25 {
-    width: 100%;
 }
 
 .button {
@@ -146,7 +132,16 @@ select {
     font-size: 25PX;
     cursor: pointer;
 }
-
+.observationBox{
+    margin: 3rem auto auto auto;
+    width: 80%;
+}
+.observationBox .row label, .observationBox .row .observations{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 footer {
     text-transform: uppercase;
     text-align: center;
@@ -183,16 +178,6 @@ footer {
     .header {
         width: 100%;
         margin-top: 0;
-    }
-
-    .observations {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .oTec,
-    .oSup {
-        width: 100%;
     }
 }
 
@@ -232,16 +217,8 @@ footer {
     select{
         font-size: 12px;
     }
-    .observations {
-        flex-direction: row;
-        width: 100%;
-        margin-top: 5rem;
-    }
-    .observations .col-25{
-        width: 100%;
-    }
 }
-@media (min-width: 801px)  and (max-width: 1100px) {
+@media (min-width: 801px)  and (max-width: 1300px) {
     .container {
         max-width: 100rem;
     }
@@ -274,13 +251,5 @@ footer {
     }
     select{
         font-size: 12px;
-    }
-    .observations {
-        flex-direction: row;
-        width: 100%;
-        margin-top: 5rem;
-    }
-    .observations .col-25{
-        width: 100%;
     }
 }
