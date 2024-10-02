@@ -1,0 +1,164 @@
+:root {
+    --color-principal: #eeeeee;
+    -color-sec: #fff;
+    --bg-color: #80CAFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #ffffff;
+}
+
+input:hover,
+textarea:hover {
+    background-color: #ffea75;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 120rem;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.register label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+}
+
+form {
+    padding: 2rem;
+}
+
+.row{
+    margin-top: 2rem;
+}
+
+header input[type=text] {
+    width: 80%;
+    padding: 5px;
+}
+p{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 1000;
+    font-style: italic;
+}
+.parts, .aprov {
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2rem;
+}
+.parts input, .aprov input{
+    margin-left: 1rem;
+}
+
+main label {
+    font-style: oblique;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 150px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.button {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.button button {
+    padding: 20px;
+    width: 150px;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.button button:hover {
+    padding: 25px;
+    width: 160px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25PX;
+    cursor: pointer;
+}
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px;
+}
+@media (max-width: 500px) {
+    .container {
+        max-width: 40rem;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .register {
+        margin: 1rem;
+    }
+
+    header input[type=text] {
+        width: 80%;
+    }
+    input[type=submit],
+    .header {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .parts, .aprov {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

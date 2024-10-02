@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de reparaciones</title>
+    <link rel="stylesheet" href="sRep.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Historial de reparaciones</h1>
+        <header>
+            <div class="register">
+                <label for="">no. equipo: </label>
+                <input type="text">
+            </div>
+            <div class="register">
+                <label for="">semana: </label>
+                <input type="text">
+            </div>
+            <div class="register">
+                <label for="">año: </label>
+                <input type="text">
+            </div>
+        </header>
+        <main>
+            <form id="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descProb">Descipción del problema</label>
+                    </div>
+                    <div class="col-80">
+                        <textarea name="descProb" id="descProb"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descRep">Descripción de la reparación</label>
+                    </div>
+                    <div class="col-80">
+                        <textarea name="descRep" id="descRep"></textarea>
+                    </div>
+                </div>
+                <p>Refacciones utilizadas</p>
+                <div class="row">
+                    <div class="parts">
+                        <div class="col-25"><label for="quan">Cantidad:</label></div>
+                        <div class="col-80"><input type="text" name="quan" id="quan"></div>
+                        <div class="col-25"><label for="np">Número de parte:</label></div>
+                        <div class="col-80"><input type="text" name="np" id="np"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="aprov">
+                        <div class="col-25"><label for="repa">Reparado:</label></div>
+                        <div class="col-80"><input type="text" name="repa" id="repa"></div>
+                        <div class="col-25"><label for="aprov">Aprobado:</label></div>
+                        <div class="col-80"><input type="text" name="aprov" id="aprov"></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button"> Enviar </button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h2>M01 |12-6 REV.1</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

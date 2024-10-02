@@ -50,25 +50,32 @@ Q7.addEventListener('change',
     var selectedOption = this.options[Q7.selectedIndex];
     console.log('Respuesta 7 ' + selectedOption.value + ': ' + selectedOption.text);
   });
+class Register {
+  constructor() {
+    this.aswere = [];
+  }
+  answereRegister(answer) {
+    this.citas = [...this.citas, answer];
+  }
+}
 let answere = [Q1, Q2, Q3, Q4, Q5, Q6, Q7];
 
-class UI{
-  imprimirAlerta(menssaje, type){
-      const divMensaje = document.createElement('div');
-      divMensaje.classList.add('text-center', 'alert', 'd-block', 'col-12');
+class UI {
+  imprimirAlerta(menssaje, type) {
+    const divMensaje = document.createElement('div');
+    divMensaje.classList.add('text-center', 'alert', 'd-block', 'col-12');
+    // Validar el tipo
+    if (type === 'error') {
+      divMensaje.classList.add('alert-danger');
+    } else {
+      divMensaje.classList.add('alert-success');
+    }
+    divMensaje.textContent = menssaje;
 
-      // Validar el tipo
-      if(type === 'error'){
-          divMensaje.classList.add('alert-danger');
-      }else{
-          divMensaje.classList.add('alert-success');
-      }
-      divMensaje.textContent = menssaje;
-
-      // Quitar alerta despues de 3 seguntos
-      setTimeout(() => {
-          divMensaje.remove();
-      }, 3000);
+    // Quitar alerta despues de 3 seguntos
+    setTimeout(() => {
+      divMensaje.remove();
+    }, 3000);
   }
 
 }
@@ -76,15 +83,15 @@ class UI{
 const ui = new UI();
 
 eventListener();
-function eventListener(){
-    Q1Input.addEventListener('input',datosCita);
-    propietarioInput.addEventListener('input',datosCita);
-    telefono.addEventListener('input',datosCita);
-    fecha.addEventListener('input',datosCita);
-    hora.addEventListener('input',datosCita);
-    sintomas.addEventListener('input',datosCita);
+function eventListener() {
+  Q1Input.addEventListener('input', datosCita);
+  propietarioInput.addEventListener('input', datosCita);
+  telefono.addEventListener('input', datosCita);
+  fecha.addEventListener('input', datosCita);
+  hora.addEventListener('input', datosCita);
+  sintomas.addEventListener('input', datosCita);
 
-    formulario.addEventListener('submit', nuevaCita);
+  formulario.addEventListener('submit', nuevaCita);
 }
 
 const registerObj = {
@@ -98,20 +105,17 @@ const registerObj = {
   observations: ''
 }
 
-function newRegister(e){
+function newRegister(e) {
   e.preventDefault();
 
-  const {nTeam,date,q1,q2,q3, q4, q5, observations} = registerObj
+  const { nTeam, date, q1, q2, q3, q4, q5, observations } = registerObj
 
-  if (nTeam === '' || date === '' || q1 === ''|| q2 === ''|| q3 === ''|| q4 === ''|| q5 === ''){
+  if (nTeam === '' || date === '' || q1 === '' || q2 === '' || q3 === '' || q4 === '' || q5 === '') {
     ui.imprimirAlerta('Todos los campos son obligatorios', 'error');
   }
-  function returnObj(){
-    citaObj.mascota = '';
-    citaObj.propietario = '';
-    citaObj.telefono = '';
-    citaObj.fecha = '';
-    citaObj.hora = '';
-    citaObj.sintomas = '';
-}
+  reiniciarObjeto();
+
+    formulario.reset();
+
+    ui.imprimirCita(administrarCitas);
 }

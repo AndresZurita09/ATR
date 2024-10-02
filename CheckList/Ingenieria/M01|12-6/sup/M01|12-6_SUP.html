@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M01|12-6 REV.1</title>
+    <link rel="stylesheet" href="style-sup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>inspección de subestación eléctrica</h1>
+        <header>
+            <div class="register">
+                <label for="">no. equipo: </label>
+                <input type="text">
+            </div>
+            <div class="register">
+                <label for="">semana: </label>
+                <input type="text">
+            </div>
+            <div class="register">
+                <label for="">año: </label>
+                <input type="text">
+            </div>
+        </header>
+        <main>
+            <form id="register">
+                <div class="row">
+                    <div class="col-25">
+                        <Label for="Q1">1. Revise que la malla de protección este libre de objetos extraños (Ej. Libre
+                            de hiervas, piedras u objetos que no pertenezcan a el).</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q1" id="Q1"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>2. Revise la temperatura del aceite. Debe ser la indicada por el proveedor.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q2" id="Q2"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>3. Asegúrese que el transformador no emita ruidos extraños.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q3" id="Q3"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>4. Verifique que no existan arqueos en las zapatas de conexiones de las cuchillas
+                            fusibles.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q4" id="Q4"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>5. Verifique si hay fugas de aceite.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q5" id="Q5"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>6. Fosa de contención limpia y seca.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q6" id="Q6"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <Label>7. Verifique que el área este libre de basura u objetos extraños.</Label>
+                    </div>
+                    <div class="col-75">
+                        <select name="Q7" id="Q7"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="observations">
+                        <div class="oTec">
+                            <div class="col-25">
+                                <label for="observationsTec">Observaciones del técnico</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observations" id="observationsTec"></textarea>
+                            </div>
+                        </div>
+                        <div class="oSup">
+                            <div class="col-25">
+                                <label for="observationsTec">Observaciones supervisor (opcional)</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observations" id="observationsTec"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button"> Enviar </button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h2>M01 |12-6 REV.1</h2>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
