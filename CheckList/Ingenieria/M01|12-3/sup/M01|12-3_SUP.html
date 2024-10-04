@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01 | 12-3</title>
-    <link rel="stylesheet" href="M01|12-3.css">
+    <title>M01 | 12-3 REV. 1 Supervisor</title>
+    <link rel="stylesheet" href="M01|12-3_SUP.css">
 </head>
 <body>
     <div class="container">
@@ -15,16 +15,16 @@
                 <input type="text" name="nTeam" id="nTeam">
             </div>
             <div class="register">
-                <label for="nWeek">Marca:</label>
-                <input type="text" name="nWeek" id="nWeek">
+                <label for="mark">Marca:</label>
+                <input type="text" name="mark" id="mark">
             </div>
             <div class="register">
-                <label for="nYear">No. Control:</label>
-                <input type="text" name="nYear" id="nYear">
+                <label for="cNumber">No. Control:</label>
+                <input type="text" name="cNumber" id="cNumber">
             </div>
             <div class="register">
-                <label for="nYear">Fecha:</label>
-                <input type="text" name="nYear" id="nYear">
+                <label for="date">Fecha:</label>
+                <input type="text" name="date" id="date">
             </div>
         </header>
         <main>
@@ -36,7 +36,7 @@
                     <div class="col-25">
                         <Label for="Q1">Desactivar el interruptor cuchilla de la unidad</Label>
                     </div>
-                    <select name="Q1" id="Q1"></select>
+                    <select name="Q1" id="Q1"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -45,7 +45,7 @@
                     <div class="col-25">
                         <Label>Debe de quedar completamente limpio</Label>
                     </div>
-                        <select name="Q2" id="Q2"></select>
+                        <select name="Q2" id="Q2"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -54,7 +54,7 @@
                     <div class="col-25">
                         <Label>Limpie y lubrique partes móviles</Label>
                     </div>
-                        <select name="Q3" id="Q3"></select>
+                        <select name="Q3" id="Q3"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -63,7 +63,7 @@
                     <div class="col-25">
                         <Label>Checar con agua y jabón para verificar si no existe fuga en la tubería y uniones</Label>
                     </div>
-                        <select name="Q4" id="Q4"></select>
+                        <select name="Q4" id="Q4"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -72,16 +72,16 @@
                     <div class="col-25">
                         <Label>No debe de producir ruidos extraños</Label>
                     </div>
-                        <select name="Q5" id="Q5"></select>
+                        <select name="Q5" id="Q5"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
                         <Label>6. Verifique condición de bandas.</Label>
                     </div>
                     <div class="col-25">
-                        <Label>Debe de estar completas y ajustadas </Label>
+                        <Label>Debe de estar completas y ajustadas</Label>
                     </div>
-                        <select name="Q6" id="Q6"></select>
+                        <select name="Q6" id="Q6"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -90,7 +90,7 @@
                     <div class="col-25">
                         <Label>Limpiar contactos de arrancadores</Label>
                     </div>
-                        <select name="Q7" id="Q7"></select>
+                        <select name="Q7" id="Q7"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -99,7 +99,7 @@
                     <div class="col-25">
                         <Label>La unidad debe de encender y apagar con el control del mismo</Label>
                     </div>
-                        <select name="Q8" id="Q8"></select>
+                        <select name="Q8" id="Q8"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -108,14 +108,26 @@
                     <div class="col-25">
                         <Label>Limpiar con solventes y franelas.</Label>
                     </div>
-                        <select name="Q9" id="Q9"></select>
+                        <select name="Q9" id="Q9"><option value="">Completo</option></select>
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="observations">Observaciones</label>
-                    </div>
-                    <div class="col-80">
-                        <textarea name="observations" id="observations"></textarea>
+                    <div class="observations">
+                        <div class="oTec">
+                            <div class="col-25">
+                                <label for="observationsTec">Observaciones del técnico:</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsTec" id="observationsTec" placeholder="Ninguna"></textarea>
+                            </div>
+                        </div>
+                        <div class="oSup">
+                            <div class="col-25">
+                                <label for="observationsSup">Observaciones supervisor (opcional)</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsSup" id="observationsSup"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="button">
@@ -127,7 +139,7 @@
             <h2>M01 |12-3 REV.1</h2>
         </footer>
     </div>
-    <a href="../menu.html">Regresar</a>
-    <script src="M01|12-3.js"></script>
+    <a href="../../menu.html">Regresar</a>
+    <script src="js.js"></script>
 </body>
 </html>

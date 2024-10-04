@@ -2,7 +2,6 @@ const opciones = [
     {texto: " - Seleccione una opción - ", value:""},
     {texto: "Completo", value:"COM"},
     {texto: "Remplazo de parte", value:"REM"},
-    {texto: "Confirmación de Reparación", value:"CONREP" },
     {texto: "Ajuste", value: "A" },
     {texto: "Limpieza", value: "C"},
     {texto: "Lubricación", value: "L"},

@@ -29,11 +29,10 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
     background-color: #ffffff;
+    font-size: 1.5rem;
 }
 
-input:hover,
-select:hover,
-textarea:hover {
+#observationsSup:hover {
     background-color: #ffea75;
     font-weight: 700;
 }
@@ -154,6 +153,9 @@ footer {
     text-decoration: underline;
     font-size: 16px;
     padding: 5px;
+}
+.Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7{
+    background-color: #8AE290;
 }
 
 /* Pantalla para celulares, los px indican el tamaño de pantalla maximo que aplicará la configuración */

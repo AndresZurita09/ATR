@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01|12-6 REV.1</title>
+    <title>M01|12-6 REV.1 Supervisor</title>
     <link rel="stylesheet" href="style-sup.css">
 </head>
 
@@ -13,16 +13,16 @@
         <h1>inspección de subestación eléctrica</h1>
         <header>
             <div class="register">
-                <label for="">no. equipo: </label>
-                <input type="text" id="nTeam">
+                <label for="">no. equipo:</label>
+                <input type="text" id="nTeam" placeholder="0001">
             </div>
             <div class="register">
-                <label for="">semana: </label>
-                <input type="text" id="date">
+                <label for="">fecha: </label>
+                <input type="text" id="date" placeholder="10-04-2024">
             </div>
             <div class="register">
-                <label for="">año: </label>
-                <input type="text" id="nPoint">
+                <label for="">técnico: </label>
+                <input type="text" id="nPoint" placeholder="145911">
             </div>
         </header>
         <main>
@@ -33,7 +33,7 @@
                             de hiervas, piedras u objetos que no pertenezcan a el).</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q1" id="Q1"></select>
+                        <select name="Q1" id="Q1" class="Q1"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -41,7 +41,7 @@
                         <Label>2. Revise la temperatura del aceite. Debe ser la indicada por el proveedor.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q2" id="Q2"></select>
+                        <select name="Q2" id="Q2" class="Q2"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -49,7 +49,7 @@
                         <Label>3. Asegúrese que el transformador no emita ruidos extraños.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q3" id="Q3"></select>
+                        <select name="Q3" id="Q3" class="Q3"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -58,7 +58,7 @@
                             fusibles.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q4" id="Q4"></select>
+                        <select name="Q4" id="Q4" class="Q4"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -66,7 +66,7 @@
                         <Label>5. Verifique si hay fugas de aceite.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q5" id="Q5"></select>
+                        <select name="Q5" id="Q5" class="Q5"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -74,7 +74,7 @@
                         <Label>6. Fosa de contención limpia y seca.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q6" id="Q6"></select>
+                        <select name="Q6" id="Q6" class="Q6"></select>
                     </div>
                 </div>
                 <div class="row">
@@ -82,25 +82,25 @@
                         <Label>7. Verifique que el área este libre de basura u objetos extraños.</Label>
                     </div>
                     <div class="col-75">
-                        <select name="Q7" id="Q7"></select>
+                        <select name="Q7" id="Q7" class="Q7"></select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="observations">
                         <div class="oTec">
                             <div class="col-25">
-                                <label for="observationsTec">Observaciones del técnico</label>
+                                <label for="observationsTec">Observaciones del técnico:</label>
                             </div>
                             <div class="col-80">
-                                <textarea name="observations" id="observationsTec" statusValid(observationsTec);></textarea>
+                                <textarea name="observations" id="observationsTec" placeholder="Ninguna"></textarea>
                             </div>
                         </div>
                         <div class="oSup">
                             <div class="col-25">
-                                <label for="observationsTec">Observaciones supervisor (opcional)</label>
+                                <label for="observationsSup">Observaciones supervisor (opcional)</label>
                             </div>
                             <div class="col-80">
-                                <textarea name="observations" id="observationsTec"></textarea>
+                                <textarea name="observationsSup" id="observationsSup"></textarea>
                             </div>
                         </div>
                     </div>

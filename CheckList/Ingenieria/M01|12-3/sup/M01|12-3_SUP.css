@@ -43,9 +43,11 @@ textarea {
     background-color: #ffffff;
 }
 
-input:hover,
-select:hover,
-textarea:hover {
+select{
+    background-color: #8AE290;
+}
+
+#observationsSup:hover {
     background-color: #ffea75;
     font-weight: 700;
 }
@@ -121,19 +123,32 @@ textarea {
     margin-top: 6px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .row {
     padding: 5px;
     margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
 }
 
 select {
     text-transform: uppercase;
+}
+
+.observations {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+}
+
+.oTec,
+.oSup {
+    width: 50%;
+}
+
+.oSup .col-25 {
+    width: 100%;
 }
 
 .button {

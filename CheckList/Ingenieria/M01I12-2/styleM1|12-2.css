@@ -41,6 +41,7 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
     background-color: #ffffff;
+    font-size: 1.5rem;
 }
 
 input:hover,
@@ -59,10 +60,12 @@ header {
 
 .register {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 header label {
-    width: 35%;
+    width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -70,17 +73,8 @@ header label {
 }
 
 header input[type=text] {
-    width: 40%;
+    width: 100%;
     padding: 5px;
-}
-
-@media (max-width: 480px) {
-    header {
-    flex-direction: column;    
-    }
-    header input[type=text]{
-        width: 80%;
-    }
 }
 
 main {
@@ -131,7 +125,8 @@ textarea {
     margin: 2rem;
     border-radius: 10px;
 }
-.box-section:hover{
+
+.box-section:hover {
     background-color: #f0f0f0;
     padding: 1rem;
     margin: 2rem;
@@ -143,7 +138,7 @@ textarea {
     font-size: 3rem;
 }
 
-.box-section p{
+.box-section p {
     text-transform: uppercase;
     font-size: 2rem;
     font-style: oblique;
@@ -186,6 +181,16 @@ footer {
 /* footer h2{
     cursor: help;
   } */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header input[type=text] {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .col-25,

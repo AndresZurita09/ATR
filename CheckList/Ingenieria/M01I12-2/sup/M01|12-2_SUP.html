@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01 I12-2 REV.</title>
-    <link rel="stylesheet" href="styleM1|12-2.css">
+    <title>M01 I12-2 REV. Supervisor</title>
+    <link rel="stylesheet" href="M01|12-2_SUP.css">
 </head>
-
 <body>
     <div class="container">
         <h1>registro de mantenimiento preventivo a tableros eléctricos</h1>
         <header>
             <div class="register">
                 <label for="nTeam">No. Planta:</label>
-                <input type="text" name="nTeam" id="nTeam">
+                <input type="text" name="nTeam" id="nTeam" placeholder="P-4">
             </div>
             <div class="register">
-                <label for="nWeek">Fecha:</label>
-                <input type="text" name="nWeek" id="nWeek">
+                <label for="date">Fecha:</label>
+                <input type="text" name="date" id="date" placeholder="10-04-2024">
             </div>
             <div class="register">
-                <label for="nYear">Ubicación:</label>
-                <input type="text" name="nYear" id="nYear">
+                <label for="ubication">Ubicación:</label>
+                <input type="text" name="ubication" id="ubication" placeholder="Linea Tacoma 12">
             </div>
             <div class="register">
                 <label for="nTable">No. Tablero:</label>
-                <input type="text" name="nTable" id="nTable">
+                <input type="text" name="nTable" id="nTable" placeholder="TI-050">
             </div>
             </svg>
         </header>
@@ -42,7 +40,7 @@
                                 asegúrese que sea la adecuada para trabajos eléctricos).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q1" id="Q1"></select>
+                            <select name="Q1" id="Q1"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -50,7 +48,7 @@
                             <Label for="Q2"> 1.2 Utilizar la herramienta adecuada (aislada).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q2" id="Q2"></select>
+                            <select name="Q2" id="Q2"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -59,7 +57,7 @@
                                 eléctricos.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q3" id="Q3"></select>
+                            <select name="Q3" id="Q3"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -68,7 +66,7 @@
                                 va realizar.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q4" id="Q4"></select>
+                            <select name="Q4" id="Q4"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -77,7 +75,7 @@
                                 evitar que peatones pasen a su lado.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q5" id="Q5"></select>
+                            <select name="Q5" id="Q5"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                 </div>
@@ -91,7 +89,7 @@
                                 tableros).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q6" id="Q6"></select>
+                            <select name="Q6" id="Q6"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -100,7 +98,7 @@
                                 eléctrico (Franjas amarillas-negras).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q7" id="Q7"></select>
+                            <select name="Q7" id="Q7"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>3. puerto del tablero</p>
@@ -110,7 +108,7 @@
                                 con llave.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q8" id="Q8"></select>
+                            <select name="Q8" id="Q8"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>4. aberturas</p>
@@ -120,7 +118,7 @@
                                 tornillos o cables energizados.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q9" id="Q9"></select>
+                            <select name="Q9" id="Q9"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>5. información dentro del tablero</p>
@@ -131,7 +129,7 @@
                                 todos los equipos y maquinas que se controlan por ese tablero)</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q10" id="Q10"></select>
+                            <select name="Q10" id="Q10"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                 </div>
@@ -146,7 +144,7 @@
                                 remplazados).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q11" id="Q11"></select>
+                            <select name="Q11" id="Q11"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>7. revisión de tornillos</p>
@@ -156,7 +154,7 @@
                                 apriete si es necesario (cables que van a tierra, fases o neutros).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q12" id="Q12"></select>
+                            <select name="Q12" id="Q12"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -166,7 +164,7 @@
                                 separados).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q13" id="Q13"></select>
+                            <select name="Q13" id="Q13"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>8. cableado</p>
@@ -175,7 +173,7 @@
                             <Label for="Q14"> 8.1 Los cables deben estar bien ruteados.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q14" id="Q14"></select>
+                            <select name="Q14" id="Q14"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -183,7 +181,7 @@
                             <Label for="Q15"> 8.2 Los cables deben estar bien sujetos a los brakers.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q15" id="Q15"></select>
+                            <select name="Q15" id="Q15"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -195,7 +193,7 @@
                                 calentamiento).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q16" id="Q16"></select>
+                            <select name="Q16" id="Q16"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -205,7 +203,7 @@
                                 reparaciones temporales).</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q17" id="Q17"></select>
+                            <select name="Q17" id="Q17"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>9. Voltaje</p>
@@ -214,7 +212,7 @@
                             <Label for="Q18"> 9.1 El tablero debe indicar el voltaje que maneja.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q18" id="Q18"></select>
+                            <select name="Q18" id="Q18"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>10. amperaje</p>
@@ -223,8 +221,7 @@
                             <Label for="Q19"> 10.1 Cada braker debe indicar el amperaje que resiste.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q19" id="Q19"></select>
-                            </ div>
+                            <select name="Q19" id="Q19"><option value="complete">Completo</option></select>
                         </div>
                         <div class="row">
                             <div class="col-25">
@@ -236,7 +233,7 @@
                                     dañara) y debe ser re balanceado.</Label>
                             </div>
                             <div class="col-75">
-                                <select name="Q20" id="Q20"></select>
+                                <select name="Q20" id="Q20"><option value="complete">Completo</option></select>
                             </div>
                         </div>
                         <div class="row">
@@ -253,7 +250,7 @@
                                     ser re balanceada para evitar la sobrecarga.</Label>
                             </div>
                             <div class="col-75">
-                                <select name="Q21" id="Q21"></select>
+                                <select name="Q21" id="Q21"><option value="complete">Completo</option></select>
                             </div>
                         </div>
                         <p>11. revisión de temperaturas con termómetro infrarrojo.</p>
@@ -265,7 +262,7 @@
                                     realizar ajustes, etc.</Label>
                             </div>
                             <div class="col-75">
-                                <select name="Q22" id="Q22"></select>
+                                <select name="Q22" id="Q22"><option value="complete">Completo</option></select>
                             </div>
                         </div>
                     </div>
@@ -279,7 +276,7 @@
                                 tablero.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q23" id="Q23"></select>
+                            <select name="Q23" id="Q23"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>13. cambio de brakers</p>
@@ -289,7 +286,7 @@
                                 tablero des energizado.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q24" id="Q24"></select>
+                            <select name="Q24" id="Q24"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                     <p>14. etiqueta de mantenimiento preventivo</p>
@@ -302,17 +299,28 @@
                                 del mantenimiento.</Label>
                         </div>
                         <div class="col-75">
-                            <select name="Q25" id="Q25"></select>
+                            <select name="Q25" id="Q25"><option value="complete">Completo</option></select>
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-25">
-                        <label for="observations">Observaciones</label>
-                    </div>
-                    <div class="col-80">
-                        <textarea name="observations" id="observations"></textarea>
+                    <div class="observations">
+                        <div class="oTec">
+                            <div class="col-25">
+                                <label for="observationsTec">Observaciones del técnico:</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsTec" id="observationsTec" placeholder="Ninguna"></textarea>
+                            </div>
+                        </div>
+                        <div class="oSup">
+                            <div class="col-25">
+                                <label for="observationsSup">Observaciones supervisor (opcional)</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsSup" id="observationsSup"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="button">
@@ -324,8 +332,7 @@
             <h2>M01 |12-2 REV.1</h2>
         </footer>
     </div>
-    <a href="../menu.html">Regresar</a>
+    <a href="../../menu.html">Regresar</a>
     <script src="js.js"></script>
 </body>
-
 </html>
