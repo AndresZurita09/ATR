@@ -1,0 +1,33 @@
+const nTeam = document.getElementById("nTeam");
+const mark = document.getElementById("nWeek");
+const cNumber = document.getElementById("nYear");
+const q1 = document.getElementById("Q1");
+const q2 = document.getElementById("Q2");
+const q3 = document.getElementById("Q3");
+const q4 = document.getElementById("Q4");
+const q5 = document.getElementById("Q5");
+const q6 = document.getElementById("Q6");
+const q7 = document.getElementById("Q7");
+const q8 = document.getElementById("Q8");
+const q9 = document.getElementById("Q9");
+const q10 = document.getElementById("Q10");
+const q11 = document.getElementById("Q11");
+const observationsTec = document.getElementById("observationsTec");
+
+nTeam.disabled = true;
+mark.disabled = true;
+cNumber.disabled = true;
+q1.disabled = true;
+q2.disabled = true;
+q3.disabled = true;
+q4.disabled = true;
+q5.disabled = true;
+q6.disabled = true;
+q7.disabled = true;
+q8.disabled = true;
+q9.disabled = true;
+q10.disabled = true;
+q11.disabled = true;
+observationsTec.disabled = true;
+
+console.log('Hola');

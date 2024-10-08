@@ -56,6 +56,11 @@ form {
     padding: 2rem;
 }
 
+.row {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+
 .register label {
     width: 100%;
     text-transform: uppercase;
@@ -103,7 +108,13 @@ textarea {
 select {
     text-transform: uppercase;
 }
-
+.box-section {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+  }
+  
 .observations {
     display: flex;
     flex-direction: row;

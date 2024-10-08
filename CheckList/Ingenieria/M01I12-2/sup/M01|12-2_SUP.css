@@ -18,6 +18,7 @@ body {
     margin: 0 auto 0 auto;
     background-color: var(--bg-color);
     padding: 1rem;
+    border-radius: 10px;
 }
 
 @media (max-width: 480px) {

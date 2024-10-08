@@ -32,7 +32,17 @@ h1 {
   text-align: center;
 }
 
-input[type=text],
+header input {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #ffffff;
+}
+
 select,
 textarea {
   width: 80%;
@@ -56,6 +66,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
+}
+
+.row {
+  display: flex;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 480px) {
@@ -122,6 +137,18 @@ select {
   text-transform: uppercase;
 }
 
+.box-section {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.observationBox {
+  margin: 3rem auto auto auto;
+  width: 80%;
+}
+
 .button {
   justify-content: center;
   display: flex;
@@ -156,9 +183,6 @@ footer {
   padding: 5px;
 }
 
-/* footer h2{
-  cursor: help;
-} */
 @media (max-width: 480px) {
   .container {
     max-width: 40rem;
@@ -168,9 +192,6 @@ footer {
     flex-direction: column;
   }
 
-  /* .col-25{
-      margin-bottom: 2rem;
-  } */
   .col-75 {
     margin: 0rem 0rem 2rem 2rem;
   }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M01 I12-4 REV.1</title>
-    <link rel="stylesheet" href="M01|12-4.css">
+    <link rel="stylesheet" href="M01|12-4_SUP.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                                 etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q1" id="Q1"></select>
+                            <select name="Q1" id="Q1"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -47,7 +47,7 @@
                                 quebradas, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q2" id="Q2"></select>
+                            <select name="Q2" id="Q2"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -58,7 +58,7 @@
                                 existan fugas de agua, las llaves no estén quebradas, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q3" id="Q3"></select>
+                            <select name="Q3" id="Q3"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -69,7 +69,7 @@
                                 no tengan fugas de agua, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q4" id="Q4"></select>
+                            <select name="Q4" id="Q4"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -79,7 +79,7 @@
                                 abolladuras, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q5" id="Q5"></select>
+                            <select name="Q5" id="Q5"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -89,7 +89,7 @@
                                 abolladuras, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q6" id="Q6"></select>
+                            <select name="Q6" id="Q6"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -100,7 +100,7 @@
                                 la cantidad de aire necesaria, que los botones realicen su función, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q7" id="Q7"></select>
+                            <select name="Q7" id="Q7"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -111,7 +111,7 @@
                                 completos, libres de abolladuras, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q8" id="Q8"></select>
+                            <select name="Q8" id="Q8"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -122,7 +122,7 @@
                                 estar completo, debe tener rejilla, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q9" id="Q9"></select>
+                            <select name="Q9" id="Q9"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -132,7 +132,7 @@
                                 interruptores deben realizar su función, deben estar completos, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q10" id="Q10"></select>
+                            <select name="Q10" id="Q10"><option value="">Completo</option></select>
                         </div>
                     </div>
                     <div class="row">
@@ -146,12 +146,26 @@
                                 encuentran, etc.).</label>
                         </div>
                         <div class="col-75">
-                            <select name="Q11" id="Q11"></select>
+                            <select name="Q11" id="Q11"><option value="">Completo</option></select>
                         </div>
                     </div>
-                    <div class="observationBox">
-                            <label for="observations">Observaciones:</label>
-                            <textarea type="text" name="observations" id="observations"></textarea>
+                    <div class="observations">
+                        <div class="oTec">
+                            <div class="col-25">
+                                <label for="observationsTec">Observaciones del técnico:</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsTec" id="observationsTec" placeholder="Ninguna"></textarea>
+                            </div>
+                        </div>
+                        <div class="oSup">
+                            <div class="col-25">
+                                <label for="observationsSup">Observaciones supervisor (opcional)</label>
+                            </div>
+                            <div class="col-80">
+                                <textarea name="observationsSup" id="observationsSup"></textarea>
+                            </div>
+                        </div>
                     </div>
                     <div class="button">
                         <button type="submit">Firmar</button>
@@ -163,8 +177,7 @@
             <h2>M01 I12-4 REV.1</h2>
         </footer>
         <a href="../menu.html">Regresar</a>
-        <script src="M01|12-4.js"></script>
     </div>
 </body>
-
+<script src="M01|12-4_SUP.js"></script>
 </html>

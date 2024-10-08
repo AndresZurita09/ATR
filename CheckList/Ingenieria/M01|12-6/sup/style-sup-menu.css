@@ -28,6 +28,7 @@ header {
     background-color: var(--bg-color);
     margin: 0 auto;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 a {
@@ -84,7 +85,8 @@ header {
     li {
         margin: 0px;
     }
-    ul{
+
+    ul {
         margin-top: 0;
     }
 }
