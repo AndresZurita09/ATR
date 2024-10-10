@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M01 |12-8 Rev. 1</title>
+    <link rel="stylesheet" href="M01-12-8.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>mantenimiento preventivo a unidades de paquete</h1>
+        <header>
+            <div class="register">
+                <label for="codigo">Código:</label>
+                <input type="text" name="codigo" id="codigo">
+            </div>
+            <div class="register">
+                <label for="serial">No. Serie:</label>
+                <input type="text" name="serial" id="serial">
+            </div>
+            <div class="register">
+                <label for="date">Fecha:</label>
+                <input type="text" name="date" id="date">
+            </div>
+        </header>
+        <main>
+            <form action="">
+                <div class="box-section">
+                    <div class="row">
+                        <h3>1. Energía eléctrica</h3>
+                        <Label for="Q1">Baje el breaker del control eléctrico de la unidad.</Label>
+                        <select name="Q1" id="Q1"></select>
+                    </div>
+                    <div class="row">
+                        <h3>2. Filtro de aceite refrigerante</h3>
+                        <Label>Se realiza el cambio de filtro si el horómetro del compresor
+                            coincide o supera las horas indicadas por el proveedor del equipo
+                            para el cambio de filtro.</Label>
+                        <select name="Q2" id="Q2"></select>
+                    </div>
+                    <div class="row">
+                        <h3>3. Filtros de aire</h3>
+                        <Label>Se realiza el cambio de filtro si el horómetro del compresor
+                            coincide o supera las horas indicadas por el proveedor del equipo
+                            para el cambio de filtro.</Label>
+                        <select name="Q3" id="Q3"></select>
+                    </div>
+                    <div class="row">
+                        <h3>4. Limpieza Interior</h3>
+                        <Label>Debe quedar limpio, libre de objetos extraños.</Label>
+                        <select name="Q4" id="Q4"></select>
+                    </div>
+                    <div class="row">
+                        <h3>5. Enfriador y serpentín</h3>
+                        <Label>Sopletear con aire comprimido hasta quitar todo el polvo.</Label>
+                        <select name="Q5" id="Q5"></select>
+                    </div>
+                    <div class="row">
+                        <h3>6. Tornillería</h3>
+                        <Label>No debe existir tornillería floja o faltante.</Label>
+                        <select name="Q6" id="Q6"></select>
+                    </div>
+                    <div class="row">
+                        <h3>7. Tablero de control eléctrico</h3>
+                        <Label>Revisar que estén los cables bien ruteados y limpio.</Label>
+                        <select name="Q7" id="Q7"></select>
+                    </div>
+                    <div class="row">
+                        <h3>8. Nivel de aceite</h3>
+                        <Label>Checar el nivel de aceite del separador, verificando que este a las
+                            tres cuartas partes de la mirilla.</Label>
+                        <select name="Q8" id="Q8"></select>
+                    </div>
+                    <div class="row">
+                        <h3>9. Motor</h3>
+                        <Label>Engrasar en las dos partes del motor ( baleros de la flecha ).</Label>
+                        <select name="Q9" id="Q9"></select>
+                    </div>
+                    <div class="time">
+                        <label for="">Registrar las horas totales del equipo trabajando como indicación
+                            de cuando se le realizo mantenimiento.</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="observations">Observaciones</label>
+                        <textarea name="observations" id="observations"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="button"> Enviar </button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h2>M01 |12-3 REV.1</h2>
+        </footer>
+    </div>
+    <a href="../menu.html">Regresar</a>
+    <script src="M01|12-3.js"></script>
+</body>
+
+</html>

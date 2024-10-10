@@ -21,10 +21,11 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 480px) {
-    .container {
-        max-width: 40rem;
-    }
+.box-section {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
 }
 
 h1 {
@@ -32,7 +33,47 @@ h1 {
     text-align: center;
 }
 
-input[type=text],
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+}
+
+header input {
+    width: 100%;
+    padding: 5px;
+}
+
+.register {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: #ffea75;
+    font-weight: 700;
+}
+
+input,
 select,
 textarea {
     width: 80%;
@@ -45,46 +86,6 @@ textarea {
 }
 select,textarea{
     border: 3px solid #ccc;
-}
-
-input:hover,
-select:hover,
-textarea:hover {
-    background-color: #ffea75;
-    font-weight: 700;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.register {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-header label {
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
-    float: left;
-}
-
-header input[type=text] {
-    width: 100%;
-    padding: 5px;
 }
 
 main {
@@ -100,6 +101,7 @@ main label {
 
 select {
     text-align: center;
+    text-transform: uppercase;
 }
 
 select:hover {
@@ -128,17 +130,6 @@ textarea {
 .row {
     padding: 5px;
     margin-left: 1%;
-}
-
-.box-section {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 2rem;
-    border-radius: 10px;
-}
-
-select {
-    text-transform: uppercase;
 }
 
 .button {
@@ -175,18 +166,42 @@ footer {
     padding: 5px;
 }
 
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
-
-    header {
-        width: 80%;
-        margin: auto;
-    }
+.button {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
 }
 
-@media (min-width: 481px) and (max-width: 615px) {
+.button button {
+    padding: 20px;
+    width: 150px;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.button button:hover {
+    padding: 25px;
+    width: 160px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25PX;
+    cursor: pointer;
+}
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+@media (max-width: 720px) {
     header {
         flex-direction: column;
     }

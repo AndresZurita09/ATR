@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M01 | 12-5 REV.1</title>
+    <link rel="stylesheet" href="M01I12-5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>mantenimiento preventivo a unidades de paquete</h1>
+        <header>
+            <div class="register">
+                <label for="code">Código</label>
+                <input type="text" name="code" id="code">
+            </div>
+            <div class="register">
+                <label for="nSerial">No. de Serie</label>
+                <input type="text" name="nSerial" id="nSerial">
+            </div>
+            <div class="register">
+                <label for="date">Fecha</label>
+                <input type="text" name="date" id="date">
+            </div>
+            <div class="register">
+                <label for="location">Ubicación</label>
+                <input type="text" name="location" id="location">
+            </div>
+        </header>
+        <main>
+            <form action="">
+                <div class="box-section">
+                    <div class="row">
+                        <div class="col-25">
+                            <Label for="Q1">1. Desactive la energía eléctrica de la unidad.</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label for="Q1">Baje la palanca del control eléctrico de la unidad.</Label>
+                        </div>
+                        <select name="Q1" id="Q1"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>2. Descargue totalmente el agua de las tinas y límpielas</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Las tinas deben quedar limpias</Label>
+                        </div>
+                        <select name="Q2" id="Q2"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>3. Quite las rejilla de paneles (celdesk) y efectué limpieza de los mismo</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Los paneles deben estar limpios y desincrustados tener precaución al limpiarlos para
+                                no deformarlos</Label>
+                        </div>
+                        <select name="Q3" id="Q3"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>4. Verifique que los flotadores estén en buenas condiciones y ajustados</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>No debe atorarse y debe cortar completamente la alimentación del agua</Label>
+                        </div>
+                        <select name="Q4" id="Q4"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>5. Verifique las condiciones de la bomba</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>No debe tener sobrecalentamiento (checar corriente)</Label>
+                        </div>
+                        <select name="Q5" id="Q5"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>6. Verifique el ajuste de las bandas</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Deben estar alineadas, ajustadas y en buenas condiciones</Label>
+                        </div>
+                        <select name="Q6" id="Q6"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>7. Verifique las condiciones de las chumaceras</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Limpiar y lubricar (Nota.- No excederse en la lubricación ya que tiende a dañarse con
+                                mayor rapidez)</Label>
+                        </div>
+                        <select name="Q7" id="Q7"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>8. Verifique las condiciones de la tornillería</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>No debe existir tornillería floja o faltante</Label>
+                        </div>
+                        <select name="Q8" id="Q8"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>9. Verifique la condición de los interruptores de palanca</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Debe estar limpio y con su tornillería ajustada</Label>
+                        </div>
+                        <select name="Q9" id="Q9"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>10. Mantenimiento eléctrico al control.</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Debe estar limpio</Label>
+                        </div>
+                        <select name="Q10" id="Q10"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>11. Encienda la unidad y verifique el amperaje</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>La corriente debe ser 15±3A / Fase</Label>
+                        </div>
+                        <select name="Q11" id="Q11"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>12. Llene de agua los depósitos</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Cerrar la llave de descarga</Label>
+                        </div>
+                        <select name="Q12" id="Q12"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <Label>13. Efectué limpieza exterior en la unidad</Label>
+                        </div>
+                        <div class="col-25">
+                            <Label>Debe quedar limpio libre de objetos extraños</Label>
+                        </div>
+                        <select name="Q13" id="Q13"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="observations">Observaciones</label>
+                        </div>
+                        <div class="col-80">
+                            <textarea name="observations" id="observations"></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button"> Enviar </button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h2>M01|12-5 REV.1</h2>
+        </footer>
+    </div>
+    <a href="../menu.html">Regresar</a>
+    <script src="M01|12-5.js"></script>
+</body>
+
+</html>

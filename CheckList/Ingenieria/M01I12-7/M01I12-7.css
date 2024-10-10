@@ -15,7 +15,7 @@ body {
 
 .container {
     max-width: 120rem;
-    margin: auto;
+    margin: 0 auto 0 auto;
     background-color: var(--bg-color);
     padding: 1rem;
     border-radius: 10px;
@@ -42,9 +42,7 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
     background-color: #ffffff;
-}
-select,textarea{
-    border: 3px solid #ccc;
+    font-size: 1.5rem;
 }
 
 input:hover,
@@ -52,13 +50,6 @@ select:hover,
 textarea:hover {
     background-color: #ffea75;
     font-weight: 700;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
 }
 
 header {
@@ -88,14 +79,8 @@ header input[type=text] {
 }
 
 main {
-    justify-content: center;
     display: flex;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-main label {
-    font-style: oblique;
+    padding: 2rem;
 }
 
 select {
@@ -112,22 +97,14 @@ textarea {
     border-radius: 10px;
 }
 
-.col-25 {
-    float: left;
-    width: 60%;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
 .col-75 {
-    float: left;
-    width: 35%;
-    margin-top: 6px;
+    width: 40%;
+    margin: 1.5rem auto;
 }
 
 .row {
     padding: 5px;
-    margin-left: 1%;
+    font-size: 2rem;
 }
 
 .box-section {
@@ -137,8 +114,22 @@ textarea {
     border-radius: 10px;
 }
 
-select {
+.box-section:hover {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.box-section h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.box-section p {
     text-transform: uppercase;
+    font-size: 2rem;
+    font-style: oblique;
 }
 
 .button {
@@ -175,21 +166,20 @@ footer {
     padding: 5px;
 }
 
+/* footer h2{
+    cursor: help;
+  } */
 @media (max-width: 480px) {
     header {
         flex-direction: column;
     }
 
-    header {
+    header input[type=text] {
         width: 80%;
-        margin: auto;
     }
 }
 
-@media (min-width: 481px) and (max-width: 615px) {
-    header {
-        flex-direction: column;
-    }
+@media screen and (max-width: 600px) {
 
     .col-25,
     .col-75,
