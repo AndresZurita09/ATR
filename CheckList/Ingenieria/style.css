@@ -1,11 +1,12 @@
 :root {
     --color-principal: #eeeeee;
     --color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #022e6b;
 }
 
 html {
     font-size: 62.5%;
+    color: #fff
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     text-transform: uppercase;
 }
 
+
 h1 {
     text-align: center;
     font-size: 3.8rem;
@@ -21,13 +23,20 @@ h1 {
 
 .titulo span {
     font-size: 2rem;
+    font-weight: 100;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 120rem;
     background-color: var(--bg-color);
     margin: 0 auto;
     padding: 1rem;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 10px;
 }
 
 @media (max-width: 480px) {
@@ -35,16 +44,23 @@ h1 {
         max-width: 40rem;
     }
 }
-a{
+
+a {
     text-decoration: none;
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin: 1rem;
 }
+
 ul {
-    margin: 2rem auto;
+    margin: 1rem auto;
     list-style: none;
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 7px 10px 6px 0 rgba(255, 255, 255, 0.5);
+    width: 80%;
 }
 
 li a {
@@ -56,6 +72,7 @@ ul:hover {
     background-color: #ffea75;
     border-radius: 10px;
     font-weight: 700;
+    box-shadow: 7px 10px 12px 0 rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 480px) {

@@ -19,9 +19,6 @@ body {
     background-color: var(--bg-color);
     padding: 1rem;
     border-radius: 10px;
-    border-style: double;
-    border-color: #fff;
-    border-width: 10px;
 }
 
 @media (max-width: 480px) {
@@ -33,7 +30,10 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    color:#fff
+    color: #fff;
+}
+h3{
+    color:#fff;
 }
 
 input[type=text],
@@ -58,10 +58,9 @@ textarea:hover {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 15px;
     color: #fff;
+    flex-direction: row-reverse;
 }
 
 .register {
@@ -102,27 +101,14 @@ textarea {
     border-radius: 10px;
 }
 
-.col-25 {
-    float: left;
-    width: 60%;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
 .col-75 {
-    float: left;
-    width: 35%;
-    margin-top: 6px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+    width: 40%;
+    margin: 1.5rem auto;
 }
 
 .row {
     padding: 5px;
+    font-size: 2rem;
 }
 
 .box-section {
@@ -143,9 +129,7 @@ textarea {
     text-align: center;
     font-size: 3rem;
 }
-h3{
-    color: #fff;
-}
+
 .box-section p {
     text-transform: uppercase;
     font-size: 2rem;
@@ -162,17 +146,17 @@ h3{
     padding: 20px;
     width: 150px;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #000;
     border-radius: 8px;
-    color: #000000;
+    color: #fff;
     font-size: 20px;
 }
 
 .button button:hover {
     padding: 25px;
     width: 160px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000;
+    color: #fff;
     font-size: 25PX;
     cursor: pointer;
 }
