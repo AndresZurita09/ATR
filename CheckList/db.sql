@@ -1,154 +1,155 @@
 CREATE DATABASE M01I12
 ON PRIMARY (
-    NAME = '';
-    FILENAME = ''
+    NAME = 'M01I12.MDF';
+    FILENAME = 'C:\DB\M01I12.MDF'
 )LOG ON(
-    NAME = '';
-    FILENAME = '';
+    NAME = 'M01I12.LDF';
+    FILENAME = 'C:\DB\M01I12.LDF';
 )
+GO
 USE M01I12
 GO
 
 CREATE TABLE Mtto_P_T_Ele(
-    id
-    status
-    no_P
-    date
-    ubi
-    no_board
-    no_emp
-    q1
-    q1_def
-    q1_def_desc
-    q2
-    q2_def
-    q2_def_desc
-    q3
-    q3_def
-    q3_def_desc
-    q4
-    q4_def
-    q4_def_desc
-    q5
-    q5_def
-    q5_def_desc
-    q6
-    q6_def
-    q6_def_desc
-    q7
-    q7_def
-    q7_def_desc
-    q8
-    q8_def
-    q8_def_desc
-    q9
-    q9_def
-    q9_def_desc
-    q10
-    q10_def
-    q10_def_desc
-    q11
-    q11_def
-    q11_def_desc
-    q12
-    q12_def
-    q12_def_desc
-    q13
-    q13_def
-    q13_def_desc
-    q14
-    q14_def
-    q14_def_desc
-    q15
-    q15_def
-    q15_def_desc
-    q16
-    q16_def
-    q16_def_desc
-    q17
-    q17_def
-    q17_def_desc
-    q18
-    q18_def
-    q18_def_desc
-    q19
-    q19_def
-    q19_def_desc
-    q20
-    q20_def
-    q20_def_desc
-    q21
-    q21_def
-    q21_def_desc
-    q22
-    q22_def
-    q22_def_desc
-    q23
-    q23_def
-    q23_def_desc
-    q24
-    q24_def
-    q24_def_desc
-    q25
-    q25_def
-    q25_def_desc
-    observation_Tec
-    observation_Sup
-    tecnic
-    supervisor
-    desc_Rep
-    quantity_Rep
-    no_Parte_Rep
-    repairman_Rep
-    sup_Rep
-    status
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    status BOOLEAN,
+    no_P VARCHAR(20) NOT NULL,
+    date DATE,
+    ubi VARCHAR(20) NOT NULL,
+    no_board VARCHAR(20) NOT NULL,
+    no_emp VARCHAR(20) NOT NULL,
+    q1 VARCHAR(5) NOT NULL,
+    q1_def VARCHAR(5) NOT NULL,
+    q1_def_desc VARCHAR(100) NOT NULL,
+    q2 VARCHAR(5) NOT NULL,
+    q2_def VARCHAR(5) NOT NULL,
+    q2_def_desc VARCHAR(100) NOT NULL,
+    q3 VARCHAR(5) NOT NULL,
+    q3_def VARCHAR(5) NOT NULL,
+    q3_def_desc VARCHAR(100) NOT NULL,
+    q4 VARCHAR(5) NOT NULL,
+    q4_def VARCHAR(5) NOT NULL,
+    q4_def_desc VARCHAR(100) NOT NULL,
+    q5 VARCHAR(5) NOT NULL,
+    q5_def VARCHAR(5) NOT NULL,
+    q5_def_desc VARCHAR(100) NOT NULL,
+    q6 VARCHAR(5) NOT NULL,
+    q6_def VARCHAR(5) NOT NULL,
+    q6_def_desc VARCHAR(100) NOT NULL,
+    q7 VARCHAR(5) NOT NULL,
+    q7_def VARCHAR(5) NOT NULL,
+    q7_def_desc VARCHAR(100) NOT NULL,
+    q8 VARCHAR(5) NOT NULL,
+    q8_def VARCHAR(5) NOT NULL,
+    q8_def_desc VARCHAR(100) NOT NULL,
+    q9 VARCHAR(5) NOT NULL,
+    q9_def VARCHAR(5) NOT NULL,
+    q9_def_desc VARCHAR(100) NOT NULL,
+    q10 VARCHAR(5) NOT NULL,
+    q10_def VARCHAR(5) NOT NULL,
+    q10_def_desc VARCHAR(100) NOT NULL,
+    q11 VARCHAR(5) NOT NULL,
+    q11_def VARCHAR(5) NOT NULL,
+    q11_def_desc VARCHAR(100) NOT NULL,
+    q12 VARCHAR(5) NOT NULL,
+    q12_def VARCHAR(5) NOT NULL,
+    q12_def_desc VARCHAR(100) NOT NULL,
+    q13 VARCHAR(5) NOT NULL,
+    q13_def VARCHAR(5) NOT NULL,
+    q13_def_desc VARCHAR(100) NOT NULL,
+    q14 VARCHAR(5) NOT NULL,
+    q14_def VARCHAR(5) NOT NULL,
+    q14_def_desc VARCHAR(100) NOT NULL,
+    q15 VARCHAR(5) NOT NULL,
+    q15_def VARCHAR(5) NOT NULL,
+    q15_def_desc VARCHAR(100) NOT NULL,
+    q16 VARCHAR(5) NOT NULL,
+    q16_def VARCHAR(5) NOT NULL,
+    q16_def_desc VARCHAR(100) NOT NULL,
+    q17 VARCHAR(5) NOT NULL,
+    q17_def VARCHAR(5) NOT NULL,
+    q17_def_desc VARCHAR(100) NOT NULL,
+    q18 VARCHAR(5) NOT NULL,
+    q18_def VARCHAR(5) NOT NULL,
+    q18_def_desc VARCHAR(100) NOT NULL,
+    q19 VARCHAR(5) NOT NULL,
+    q19_def VARCHAR(5) NOT NULL,
+    q19_def_desc VARCHAR(100) NOT NULL,
+    q20 VARCHAR(5) NOT NULL,
+    q20_def VARCHAR(5) NOT NULL,
+    q20_def_desc VARCHAR(100) NOT NULL,
+    q21 VARCHAR(5) NOT NULL,
+    q21_def VARCHAR(5) NOT NULL,
+    q21_def_desc VARCHAR(100) NOT NULL,
+    q22 VARCHAR(5) NOT NULL,
+    q22_def VARCHAR(5) NOT NULL,
+    q22_def_desc VARCHAR(100) NOT NULL,
+    q23 VARCHAR(5) NOT NULL,
+    q23_def VARCHAR(5) NOT NULL,
+    q23_def_desc VARCHAR(100) NOT NULL,
+    q24 VARCHAR(5) NOT NULL,
+    q24_def VARCHAR(5) NOT NULL,
+    q24_def_desc VARCHAR(100) NOT NULL,
+    q25 VARCHAR(5) NOT NULL,
+    q25_def VARCHAR(5) NOT NULL,
+    q25_def_desc VARCHAR(100) NOT NULL,
+    observation_Tec VARCHAR(100),
+    observation_Sup VARCHAR(100),
+    tecnic INT,
+    supervisor INT,
+    desc_Rep VARCHAR(100),
+    quantity_Rep INT,
+    no_Parte_Rep VARCHAR(100),
+    repairman_Rep INT,
+    sup_Rep INT
 );
 
 CREATE TABLE Insp_Ba(
-    banos
-    area
-    date
-    q1
-    q1_def
-    q1_def_desc
-    q2
-    q2_def
-    q2_def_desc
-    q3
-    q3_def
-    q3_def_desc
-    q4
-    q4_def
-    q4_def_desc
-    q5
-    q5_def
-    q5_def_desc
-    q6
-    q6_def
-    q6_def_desc
-    q7
-    q7_def
-    q7_def_desc
-    q8
-    q8_def
-    q8_def_desc
-    q9
-    q9_def
-    q9_def_desc
-    q10
-    q10_def
-    q10_def_desc
-    q11
-    q11_def
-    q11_def_desc
-    observation_Tec
-    observation_Sup
-    tecnic
-    supervisor
-    desc_Rep
-    quantity_Rep
-    no_Parte
-    repairman
-    sup_Rep
-    status
+    id_Insp_Ba INT AUTO_INCREMENT PRIMARY KEY,
+    banos VARCHAR (100),
+    area VARCHAR (100),
+    date DATE,
+    q1 VARCHAR(5), 
+    q1_def VARCHAR(5),
+    q1_def_desc VARCHAR(100),
+    q2 VARCHAR(5),
+    q2_def VARCHAR(5),
+    q2_def_desc VARCHAR(100),
+    q3 VARCHAR(5),
+    q3_def VARCHAR(5),
+    q3_def_desc VARCHAR(100),
+    q4 VARCHAR(5),
+    q4_def VARCHAR(5),
+    q4_def_desc VARCHAR(100),
+    q5 VARCHAR(5),
+    q5_def VARCHAR(5),
+    q5_def_desc VARCHAR(100),
+    q6 VARCHAR(5),
+    q6_def VARCHAR(5),
+    q6_def_desc VARCHAR(100),
+    q7 VARCHAR(5),
+    q7_def VARCHAR(5),
+    q7_def_desc VARCHAR(100),
+    q8 VARCHAR(5),
+    q8_def VARCHAR(5),
+    q8_def_desc VARCHAR(100),
+    q9 VARCHAR(5),
+    q9_def VARCHAR(5),
+    q9_def_desc VARCHAR(100),
+    q10 VARCHAR(5),
+    q10_def VARCHAR(5),
+    q10_def_desc VARCHAR(100),
+    q11 VARCHAR(5),
+    q11_def VARCHAR(5),
+    q11_def_desc VARCHAR(100),
+    observation_Tec VARCHAR(100),
+    observation_Sup VARCHAR(100),
+    tecnic INT,
+    supervisor INT,
+    desc_Rep VARCHAR(100),
+    quantity_Rep INT,
+    no_Parte VARCHAR(20),
+    repairman INT,
+    sup_Rep INT,
+    status BOOLEAN
 );

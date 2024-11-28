@@ -234,6 +234,7 @@ function campoObservaciones(combo, referenceID){
     label.classList.add('observation-label');
     const txtArea = document.createElement('TEXTAREA');
     txtArea.setAttribute('type', 'text');
+    txtArea.name=`ob-rep-${combo}`
     txtArea.setAttribute('id', `ob-rep-${combo}`);
     
     div.appendChild(label);
