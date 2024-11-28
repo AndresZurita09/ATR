@@ -1,7 +1,7 @@
 :root {
     --color-principal: #eeeeee;
     -color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #022e6b;
 }
 
 html {
@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     font-size: 3.8rem;
     text-transform: uppercase;
+    color:#fff;
 }
 
 input[type=text],
@@ -43,6 +44,9 @@ textarea {
     margin: 0 auto;
     padding: 1rem;
     border-radius: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 10px;
 }
 
 header {
@@ -50,6 +54,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
+    color:#fff;
 }
 
 form {
@@ -59,7 +64,7 @@ form {
 .row {
     display: flex;
     margin-top: 1.5rem;
-  }
+}
 
 .register label {
     width: 100%;
@@ -99,7 +104,8 @@ textarea {
     border-radius: 10px;
 }
 
-.col-25, .col-75 {
+.col-25,
+.col-75 {
     float: left;
     width: 50%;
     margin-top: 6px;
@@ -108,13 +114,14 @@ textarea {
 select {
     text-transform: uppercase;
 }
+
 .box-section {
     background-color: #fff;
     padding: 1rem;
     margin: 2rem;
     border-radius: 10px;
-  }
-  
+}
+
 .observations {
     display: flex;
     flex-direction: row;
@@ -164,8 +171,16 @@ footer {
     text-decoration: underline;
     font-size: 16px;
     padding: 5px;
+    color: #fff;
 }
-.Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7{
+
+.Q1,
+.Q2,
+.Q3,
+.Q4,
+.Q5,
+.Q6,
+.Q7 {
     background-color: #8AE290;
 }
 
@@ -178,7 +193,8 @@ footer {
     header {
         flex-direction: column;
     }
-    .col-75{
+
+    .col-75 {
         margin: 0rem 0rem 2rem 2rem;
     }
 
@@ -211,7 +227,7 @@ footer {
 
 /* Pantalla para tablets, los px indican el tamaño de pantalla maximo que aplicará la configuración */
 
-@media (min-width: 501px)  and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .container {
         max-width: 80rem;
     }
@@ -219,42 +235,52 @@ footer {
     header {
         flex-direction: row;
     }
-    .register label{
+
+    .register label {
         width: 100%;
     }
+
     header input[type=text] {
         width: 100%;
     }
+
     .register {
         margin: 1rem;
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
     }
+
     .col-25 {
         float: left;
         width: 55%;
         margin-top: 2rem;
     }
+
     .col-75 {
         float: right;
         width: 40%;
         margin: 0 0 2rem 1rem;
     }
-    select{
+
+    select {
         font-size: 12px;
     }
+
     .observations {
         flex-direction: row;
         width: 100%;
         margin-top: 5rem;
     }
-    .observations .col-25{
+
+    .observations .col-25 {
         width: 100%;
     }
 }
-@media (min-width: 801px)  and (max-width: 1100px) {
+
+@media (min-width: 801px) and (max-width: 1100px) {
     .container {
         max-width: 100rem;
     }
@@ -262,38 +288,47 @@ footer {
     header {
         flex-direction: row;
     }
-    .register label{
+
+    .register label {
         width: 100%;
     }
+
     header input[type=text] {
         width: 100%;
     }
+
     .register {
         margin: 1rem;
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
     }
+
     .col-25 {
         float: left;
         width: 55%;
         margin-top: 2rem;
     }
+
     .col-75 {
         float: right;
         width: 40%;
         margin: 0 0 2rem 1rem;
     }
-    select{
+
+    select {
         font-size: 12px;
     }
+
     .observations {
         flex-direction: row;
         width: 100%;
         margin-top: 5rem;
     }
-    .observations .col-25{
+
+    .observations .col-25 {
         width: 100%;
     }
 }

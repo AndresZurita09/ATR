@@ -13,20 +13,20 @@
         <h1>inspección de baños</h1>
         <header>
             <div class="register">
-                <label for="nTeam">Baños de:</label>
-                <input type="text" name="nTeam" id="nTeam">
+                <label for="baño">Baños de:</label>
+                <input type="text" name="baño" id="baño">
             </div>
             <div class="register">
-                <label for="nWeek">Área:</label>
-                <input type="text" name="nWeek" id="nWeek">
+                <label for="area">Área:</label>
+                <input type="text" name="area" id="area">
             </div>
             <div class="register">
-                <label for="nYear">Fecha:</label>
-                <input type="text" name="nYear" id="nYear">
+                <label for="date">Fecha:</label>
+                <input type="text" name="date" id="date">
             </div>
         </header>
         <main>
-            <form action="">
+            <form id="form" action="">
                 <div class="box-section">
                     <div class="row">
                         <div class="col-25">
@@ -40,6 +40,7 @@
                             <select name="Q1" id="Q1"></select>
                         </div>
                     </div>
+                    <div id="observation1"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q2">2. Verifique que las lámparas funcionen adecuadamente (Ej. No deben estar
@@ -50,6 +51,7 @@
                             <select name="Q2" id="Q2"></select>
                         </div>
                     </div>
+                    <div id="observation2"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q3">3. Verifique que los lavabos funcionen adecuadamente (Ej. Que estén
@@ -61,6 +63,7 @@
                             <select name="Q3" id="Q3"></select>
                         </div>
                     </div>
+                    <div id="observation3"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q4">4. Verifique que los mingitorios operen correctamente (Ej. No les falten
@@ -72,6 +75,7 @@
                             <select name="Q4" id="Q4"></select>
                         </div>
                     </div>
+                    <div id="observation4"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q5">5. Verifique que las papeleras estén en buen estado(Ej. Que no tengan
@@ -82,6 +86,7 @@
                             <select name="Q5" id="Q5"></select>
                         </div>
                     </div>
+                    <div id="observation5"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q6">6. Verifique que las jaboneras estén en buen estado (Ej. Que no tengan
@@ -92,6 +97,7 @@
                             <select name="Q6" id="Q6"></select>
                         </div>
                     </div>
+                    <div id="observation6"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q7">7. Verifique que el secador eléctrico de manos funcione correctamente (Ej.
@@ -103,6 +109,7 @@
                             <select name="Q7" id="Q7"></select>
                         </div>
                     </div>
+                    <div id="observation7"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q8">8. Verifique que los despachadores de papel estén en buenas condiciones (Ej.
@@ -114,6 +121,7 @@
                             <select name="Q8" id="Q8"></select>
                         </div>
                     </div>
+                    <div id="observation8"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q9">9. Verifique que el extractor este en buenas condiciones (Ej. Debe
@@ -125,6 +133,7 @@
                             <select name="Q9" id="Q9"></select>
                         </div>
                     </div>
+                    <div id="observation9"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q10">10. Verifique que las instalaciones eléctricas estén en buen estado (Ej.
@@ -135,6 +144,7 @@
                             <select name="Q10" id="Q10"></select>
                         </div>
                     </div>
+                    <div id="observation10"></div>
                     <div class="row">
                         <div class="col-25">
                             <label for="Q11">11. Verifique las condiciones de los espejos, azulejos, pintura y plafones
@@ -149,6 +159,7 @@
                             <select name="Q11" id="Q11"></select>
                         </div>
                     </div>
+                    <div id="observation11"></div>
                     <div class="observationBox">
                             <label for="observations">Observaciones:</label>
                             <textarea type="text" name="observations" id="observations"></textarea>
@@ -166,5 +177,4 @@
         <script src="M01|12-4.js"></script>
     </div>
 </body>
-
 </html>

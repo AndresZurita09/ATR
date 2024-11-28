@@ -1,7 +1,7 @@
 :root {
     --color-principal: #eeeeee;
     -color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #022e6b;
 }
 
 html {
@@ -19,6 +19,9 @@ body {
     background-color: var(--bg-color);
     padding: 1rem;
     border-radius: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 10px;
 }
 
 @media (max-width: 480px) {
@@ -29,6 +32,7 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
+    color: #fff;
 }
 
 input[type=text],
@@ -44,7 +48,9 @@ textarea {
     font-size: 1.5rem;
 }
 
-
+.observations{
+    color: #fff;
+}
 select{
     background-color: #8AE290;
 }
@@ -58,6 +64,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
+    color: #fff;
 }
 
 .register {
@@ -177,6 +184,7 @@ footer {
     text-decoration: underline;
     font-size: 16px;
     padding: 5px;
+    color: #fff;
 }
 
 /* footer h2{

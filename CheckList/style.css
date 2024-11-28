@@ -1,7 +1,7 @@
 :root {
     --color-principal: #eeeeee;
     --color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #022e6b;
 }
 
 html {
@@ -17,6 +17,7 @@ body {
 h1 {
     text-align: center;
     font-size: 3.8rem;
+    color: #fff;
 }
 
 .titulo span {
@@ -28,6 +29,10 @@ h1 {
     background-color: var(--bg-color);
     margin: 0 auto;
     padding: 1rem;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 10px;
 }
 
 @media (max-width: 480px) {
@@ -37,6 +42,9 @@ h1 {
 }
 a{
     text-decoration: none;
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin: 1rem;
 }
 ul {
     margin: 2rem auto;

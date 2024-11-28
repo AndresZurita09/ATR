@@ -1,7 +1,7 @@
 :root {
     --color-principal: #eeeeee;
     -color-sec: #fff;
-    --bg-color: #80CAFF;
+    --bg-color: #022e6b;
 }
 
 html {
@@ -14,25 +14,34 @@ body {
 }
 
 header {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.titulo span {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 10rem;
     font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
 }
 
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
 .container {
     max-width: 120rem;
     background-color: var(--bg-color);
     margin: 0 auto;
     padding: 1rem;
     border-radius: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 10px;
 }
 
 a {
     text-decoration: none;
+    color:#022e6b;
 }
 
 ul {
@@ -42,15 +51,6 @@ ul {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-}
-
-.labels {
-    display: flex;
-    justify-content: space-between;
-    margin: 0rem 10rem;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: capitalize;
 }
 
 li {
@@ -63,13 +63,6 @@ ul:hover {
     background-color: #ffea75;
     border-radius: 10px;
     font-weight: 700;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,154 @@
+CREATE DATABASE M01I12
+ON PRIMARY (
+    NAME = '';
+    FILENAME = ''
+)LOG ON(
+    NAME = '';
+    FILENAME = '';
+)
+USE M01I12
+GO
+
+CREATE TABLE Mtto_P_T_Ele(
+    id
+    status
+    no_P
+    date
+    ubi
+    no_board
+    no_emp
+    q1
+    q1_def
+    q1_def_desc
+    q2
+    q2_def
+    q2_def_desc
+    q3
+    q3_def
+    q3_def_desc
+    q4
+    q4_def
+    q4_def_desc
+    q5
+    q5_def
+    q5_def_desc
+    q6
+    q6_def
+    q6_def_desc
+    q7
+    q7_def
+    q7_def_desc
+    q8
+    q8_def
+    q8_def_desc
+    q9
+    q9_def
+    q9_def_desc
+    q10
+    q10_def
+    q10_def_desc
+    q11
+    q11_def
+    q11_def_desc
+    q12
+    q12_def
+    q12_def_desc
+    q13
+    q13_def
+    q13_def_desc
+    q14
+    q14_def
+    q14_def_desc
+    q15
+    q15_def
+    q15_def_desc
+    q16
+    q16_def
+    q16_def_desc
+    q17
+    q17_def
+    q17_def_desc
+    q18
+    q18_def
+    q18_def_desc
+    q19
+    q19_def
+    q19_def_desc
+    q20
+    q20_def
+    q20_def_desc
+    q21
+    q21_def
+    q21_def_desc
+    q22
+    q22_def
+    q22_def_desc
+    q23
+    q23_def
+    q23_def_desc
+    q24
+    q24_def
+    q24_def_desc
+    q25
+    q25_def
+    q25_def_desc
+    observation_Tec
+    observation_Sup
+    tecnic
+    supervisor
+    desc_Rep
+    quantity_Rep
+    no_Parte_Rep
+    repairman_Rep
+    sup_Rep
+    status
+);
+
+CREATE TABLE Insp_Ba(
+    banos
+    area
+    date
+    q1
+    q1_def
+    q1_def_desc
+    q2
+    q2_def
+    q2_def_desc
+    q3
+    q3_def
+    q3_def_desc
+    q4
+    q4_def
+    q4_def_desc
+    q5
+    q5_def
+    q5_def_desc
+    q6
+    q6_def
+    q6_def_desc
+    q7
+    q7_def
+    q7_def_desc
+    q8
+    q8_def
+    q8_def_desc
+    q9
+    q9_def
+    q9_def_desc
+    q10
+    q10_def
+    q10_def_desc
+    q11
+    q11_def
+    q11_def_desc
+    observation_Tec
+    observation_Sup
+    tecnic
+    supervisor
+    desc_Rep
+    quantity_Rep
+    no_Parte
+    repairman
+    sup_Rep
+    status
+);
